@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite both the article and this archive."
+type: software
+title: "The Scale Sector of a One-Sector Dark Cosmology: μ from Dimensional Transmutation and Glueball Dark Matter"
+abstract: "Code for the scale-sector paper: mirror-unification / dimensional-transmutation running and glueball 3→2 cannibal freeze-out calculations placing the SEDE mass scale μ and its hidden-sector glueball dark matter."
+authors:
+  - family-names: Pandev
+    given-names: Stilian
+    orcid: "https://orcid.org/0009-0005-8153-071X"
+    affiliation: "Independent researcher"
+version: 1.0.0
+date-released: 2026-07-23
+doi: 10.5281/zenodo.21525533
+license: MIT
+repository-code: "https://github.com/spsingularity/mu-transmutation-glueball"
+keywords:
+  - "dark matter"
+  - "glueball dark matter"
+  - "hidden sector"
+  - "dimensional transmutation"
+  - "confinement"
+  - "cannibal dark matter"
+  - "dark energy scale"
+  - "mirror unification"
