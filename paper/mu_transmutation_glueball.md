@@ -246,6 +246,17 @@ Numbered, with current status:
 
 A sixth, related discriminator sits one level up: with transmutation replacing the visible-QCD amplitude hypothesis, the dissipation-partition parameter $b$ is unpinned and becomes *measurable* (forecast $\sigma(\mu_0) \approx 0.05$ from DESI DR3 + Euclid separates $b = 0.2$ from $b = 1$ at $\sim 5\sigma$), giving a clean three-way origin discrimination: a measured $b \approx 0.206$ resurrects the visible-QCD hypothesis; any other value kills it in favor of transmutation or neither.
 
+One robustness statement belongs alongside the falsifier list rather than in it. Because the
+hidden sector is cold ($\xi \approx 0.005$) and the glueball heavy ($m_G \approx 312$ MeV),
+cannibal freeze-out occurs at $T_{\rm vis} \approx 3$ GeV, and both the free-streaming and
+cannibal-horizon cutoffs lie below $10^{-10}\,M_\odot$ — some eighteen orders of magnitude
+beneath the $\sim 10^8\,M_\odot$ subhaloes detected by gravitational imaging (e.g. JVAS
+B1938+666). The sector is CDM-like on all observable scales, as a *derived* consequence of its
+coldness rather than an assumption; substructure lensing does not constrain it, and the SIDM
+channel ($\sigma/m = 0.09$ cm²/g) sits well below the $\sim 1$ cm²/g scale at which subhalo
+evaporation becomes diagnostic in lensing — the binding self-interaction constraint remains the
+cluster bound of §6.
+
 ---
 
 ## 8. Discussion and limitations
