@@ -28,8 +28,10 @@ pandoc -f markdown-superscript-subscript .build.md -o tex/$BASE.tex \
 # numeric journal: no author-prominent form — normalise \citet -> \citep
 perl -0pi -e 's#\\citet\{#\\citep{#g' tex/$BASE.tex
 # elsarticle keywords are \sep-separated
-perl -0pi -e 's#(\\begin\{keyword\}\s*\n)([^\\]*?)(\n\s*\\end\{keyword\})#my ($a,$k,$z)=($1,$2,$3); $k =~ s{,\s*}{ \\sep }g; "$a$k$z"#se' tex/$BASE.tex
+perl -0pi -e 's#(\\begin\{keyword\}\s*\n)([^\\]*?)(\n\s*\\end\{keyword\})#my ($a,$k,$z)=($1,$2,$3); $k =~ s{[;,]\s*}{ \\sep }g; "$a$k$z"#se' tex/$BASE.tex
 # number display equations: pandoc emits \[ ... \]; convert to a numbered environment
+# make long monospace paths breakable (prevents right-margin overflow)
+perl -0pi -e 's{\\texttt\{([^{}]*)\}}{"\\texttt{".($1=~s#([/._])#$1\\allowbreak #gr)."}"}ge' tex/$BASE.tex
 perl -0pi -e 's/\\\[/\\begin{equation}/g; s/\\\]/\\end{equation}/g' tex/$BASE.tex
 
 ( cd tex && \

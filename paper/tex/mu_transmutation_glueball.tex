@@ -126,6 +126,10 @@ independent tuning. We enumerate falsifiers and tag every claim as
 derived, matched, or conjectured.
 \end{abstract}
 
+\begin{keyword}
+dark matter \sep hidden sector \sep dimensional transmutation \sep glueball dark
+matter \sep self-interacting dark matter \sep dark energy
+\end{keyword}
 
 \end{frontmatter}
 
@@ -210,7 +214,7 @@ Setting \(\Lambda_h = \mu = 28.55\) MeV yields
 This is the same ballpark as the Standard Model couplings at
 \(M_{\rm Pl}\) (\(1/\alpha \sim 47\)--\(59\)), though not equal to any
 of them. The check verifies exactly
-(\texttt{mu\_transmutation\_check.py}). The \(10^{60}\) tuning in
+(\texttt{mu\_\allowbreak transmutation\_\allowbreak check.\allowbreak py}). The \(10^{60}\) tuning in
 \(\rho\) genuinely becomes a log-natural coupling specification.
 
 We quote here the full Planck mass \(M_{\rm Pl} = 1.22\times10^{19}\)
@@ -251,7 +255,7 @@ the \(N_f\,5\to6\) threshold at \(m_t\)) gives
 \(\alpha_s(M_{\rm Pl}) = 0.01886\), i.e.~\(1/\alpha = 53.0\). The hidden
 confinement scale is then fixed entirely by the \emph{discrete} flavor
 content of the mirror sector. At one loop
-(\texttt{mu\_transmutation\_check.py}):
+(\texttt{mu\_\allowbreak transmutation\_\allowbreak check.\allowbreak py}):
 
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
@@ -284,7 +288,7 @@ subsections make quantitative.
 band}\label{sec-3-2}
 
 The two-loop calculation with thresholds
-(\texttt{mu\_transmutation\_steps.py}) supersedes the early one-loop
+(\texttt{mu\_\allowbreak transmutation\_\allowbreak steps.\allowbreak py}) supersedes the early one-loop
 quote of ``\(\Lambda_h \approx 46\) MeV'':
 
 \begin{longtable}[]{@{}
@@ -325,7 +329,7 @@ is retracted: the band brackets \emph{both} targets.
 so}\label{sec-3-3}
 
 The scheme-fixed three-loop (and four-loop) running was computed as
-Tier-1 item \#2 (\texttt{mirror\_qcd\_3loop.py}), with the explicit
+Tier-1 item \#2 (\texttt{mirror\_\allowbreak qcd\_\allowbreak 3loop.\allowbreak py}), with the explicit
 question of whether it tightens the band. It does not:
 
 \begin{longtable}[]{@{}
@@ -504,7 +508,7 @@ self-annihilations
 \citep{Hochberg:2014dra, Hochberg:2014kqa, Hochberg:2015vrg} with
 separate hidden-sector entropy, frozen out when \(\Gamma_{3\to2} = H\)
 \citep{Pappadopulo:2016pkp, Farina:2016llk, Kuflik:2015isi}. The full
-calculation (\texttt{glueball\_simp\_relic.py}: separate-entropy
+calculation (\texttt{glueball\_\allowbreak simp\_\allowbreak relic.\allowbreak py}: separate-entropy
 tracking, Boltzmann-equilibrium cannibalization) confirms the coupling
 naturalness: solving for \(\Omega h^2 = 0.12\) requires
 
@@ -620,7 +624,7 @@ pincer on
 
 Glueball dark matter self-interacts with a geometric,
 \textbf{velocity-independent} cross-section fixed by \(\Lambda_h\) alone
-(\texttt{glueball\_simp\_relic.py}):
+(\texttt{glueball\_\allowbreak simp\_\allowbreak relic.\allowbreak py}):
 
 \begin{longtable}[]{@{}ll@{}}
 \toprule\noalign{}
@@ -658,7 +662,7 @@ SIDM gravothermal collapse of early dense halos is a heavy-seed channel
 for the JWST Little Red Dot (LRD) overmassive black holes
 (\(M_{\rm BH} \sim 10^6\)--\(10^8\,M_\odot\) at \(z \sim 5\)--9,
 \(n_{\rm LRD} \sim 10^{-5}\,{\rm Mpc}^{-3}\)). The calculation
-(\texttt{glueball\_lrd\_seeding.py}: \(\sigma(M,z)\) from the linear
+(\texttt{glueball\_\allowbreak lrd\_\allowbreak seeding.\allowbreak py}: \(\sigma(M,z)\) from the linear
 \(P(k)\), Sheth--Tormen mass function, NFW gravothermal time with the
 Essig et al.~calibration, lognormal concentration tail, formation window
 \(z_f \in \{10\text{–}15\} \to z = 7\)) gives, at the best formation
@@ -984,29 +988,29 @@ proposal is presented at exactly that strength and no more.
 All numerical claims in this paper are reproduced by the following
 scripts in this repository
 (\url{https://github.com/spsingularity/mu-transmutation-glueball},
-\texttt{src/}; a tagged release is archived at Zenodo, DOI
+\texttt{src/\allowbreak }; a tagged release is archived at Zenodo, DOI
 10.5281/zenodo.21525533):
 
 \begin{itemize}
 \tightlist
 \item
-  \texttt{mu\_transmutation\_check.py} --- §\ref{sec-2} coupling check
+  \texttt{mu\_\allowbreak transmutation\_\allowbreak check.\allowbreak py} --- §\ref{sec-2} coupling check
   and sensitivity; §\ref{sec-3-1} one-loop \(N_f\) scan; §\ref{sec-4} UZ
   coefficient target.
 \item
-  \texttt{mu\_transmutation\_steps.py} --- §\ref{sec-3-2} two-loop +
+  \texttt{mu\_\allowbreak transmutation\_\allowbreak steps.\allowbreak py} --- §\ref{sec-3-2} two-loop +
   threshold band; the \(b\)-freed sum rule and measurability forecast;
   §\ref{sec-5-4} subcomponent \(\xi\) boundaries and the \(m_X\)-shift
   window.
 \item
-  \texttt{mirror\_qcd\_3loop.py} --- §\ref{sec-3-3} three- and four-loop
+  \texttt{mirror\_\allowbreak qcd\_\allowbreak 3loop.\allowbreak py} --- §\ref{sec-3-3} three- and four-loop
   running, the spurious IR fixed point, and the 28--133 MeV band.
 \item
-  \texttt{glueball\_simp\_relic.py} --- §\ref{sec-5} decoupled-cannibal
+  \texttt{glueball\_\allowbreak simp\_\allowbreak relic.\allowbreak py} --- §\ref{sec-5} decoupled-cannibal
   freeze-out, \(\alpha_{\rm eff}\) and \(\xi\)/\(Br\) bands,
   \(\Delta N_{\rm eff}\), and the §\ref{sec-6-1} \(\sigma/m\) ladder.
 \item
-  \texttt{glueball\_lrd\_seeding.py} --- §\ref{sec-6-2} gravothermal
+  \texttt{glueball\_\allowbreak lrd\_\allowbreak seeding.\allowbreak py} --- §\ref{sec-6-2} gravothermal
   seeding calculation (halo mass function, concentration tail, collapse
   times, seed abundances).
 \end{itemize}
