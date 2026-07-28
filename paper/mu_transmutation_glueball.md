@@ -103,7 +103,7 @@ The scheme-fixed three-loop (and four-loop) running was computed as Tier-1 item 
 | 3 | spurious IR fixed point — $\beta$ develops a zero at $a \approx 0.28$ ($\alpha \approx 3.5$), outside perturbative control |
 | 4 | 133 MeV |
 
-**The three-loop does not tighten the band; it reveals why no perturbative order will.** $N_f = 6$ $SU(3)$ sits close enough to the conformal-window edge ($N_f^* \sim 8$–12) that the confinement scale is loop-order-sensitive: the 1-loop–4-loop span is a factor $\sim 5$ (28–133 MeV), and the three-loop $\beta$-function's fixed point at $\alpha \approx 3.5$ is an artifact appearing where perturbation theory has already failed. The band is **irreducibly $O(1)$-wide from perturbation theory** near the conformal edge. This is a negative refinement of the two-loop result and we present it as such: the zero-parameter mirror construction brackets $\mu$ to the right decade — a real success — but perturbation theory *cannot* pin the value to 28.5 vs 52 MeV.
+**The three-loop does not tighten the band; it reveals why no perturbative order will.** $N_f = 6$ $SU(3)$ sits close enough to the conformal-window edge ($N_f^* \sim 8$–12) that the confinement scale is loop-order-sensitive: the 1-loop–4-loop span is a factor $\sim 5$ (28–133 MeV), and the three-loop $\beta$-function's fixed point at $\alpha \approx 3.5$ is an artifact appearing where perturbation theory has already failed. The band is **irreducibly $O(1)$-wide from perturbation theory** near the conformal edge. This is a negative refinement of the two-loop result and we present it as such: the zero-parameter mirror construction brackets $\mu$ to the right decade — a real success — but perturbation theory *cannot* pin the value to 28.5 vs 52 MeV (Figure 1).
 
 ![](figures/fig1_mirror_band.png)
 
@@ -228,7 +228,7 @@ Putting §6.1 and §6.2 together with §4:
 - **clusters press from above:** $\sigma/m \lesssim 0.1$–0.5 cm²/g disfavors $\Lambda_h \approx 30$ MeV;
 - **LRD seeding (if SIDM-driven) presses from below:** $\sigma/m \gtrsim 0.1$ cm²/g (with baryons) excludes $\Lambda_h \approx 105$ MeV.
 
-This is **one live constraint (clusters, from above) plus one conditional viability bracket (LRD, from below), consistent with the UZ-defined 52 MeV — not three independent probes, since the UZ arm is the *definition* of 52 MeV ($=6^{1/3}\mu$), not an independent measurement of it.** The two-sided squeeze is consistent with $\Lambda_h \approx 52$ MeV — the same value the SEDE H-linear mechanism requires. We state its epistemic status precisely: **this is a convergence of *constraints* (one of them conditional on an unresolved astrophysical question), not a measurement of $\Lambda_h$.** The lattice $T_c/\Lambda_{\overline{\rm MS}}$ calculation (§3.4) would supply a genuinely independent, non-astrophysical probe — either converging on one number, or failing to and falsifying the transmutation identification.
+This is **one live constraint (clusters, from above) plus one conditional viability bracket (LRD, from below), consistent with the UZ-defined 52 MeV — not three independent probes, since the UZ arm is the *definition* of 52 MeV ($=6^{1/3}\mu$), not an independent measurement of it.** The two-sided squeeze is consistent with $\Lambda_h \approx 52$ MeV — the same value the SEDE H-linear mechanism requires. We state its epistemic status precisely: **this is a convergence of *constraints* (one of them conditional on an unresolved astrophysical question), not a measurement of $\Lambda_h$.** The lattice $T_c/\Lambda_{\overline{\rm MS}}$ calculation (§3.4) would supply a genuinely independent, non-astrophysical probe — either converging on one number, or failing to and falsifying the transmutation identification (Figure 2).
 
 ![](figures/fig2_pincer.png)
 
@@ -307,6 +307,12 @@ All numerical claims in this paper are reproduced by the following scripts in th
 - `glueball_lrd_seeding.py` — §6.2 gravothermal seeding calculation (halo mass function, concentration tail, collapse times, seed abundances).
 
 Source assessments (dimensional transmutation, glueball-DM, and LRD seeding) are documented in the private research hub.
+
+## Funding and competing interests
+
+This research received no external funding. The author, an independent researcher, declares no
+competing interests. Ethics approval is not applicable: this work is theoretical and involved no
+human participants, no human data or tissue, and no animal subjects.
 
 ## Acknowledgements
 
