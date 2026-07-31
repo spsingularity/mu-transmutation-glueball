@@ -298,7 +298,7 @@ Dimensional transmutation converts SEDE's deepest fine-tuning — the origin of 
 
 ## 10. Reproducibility
 
-All numerical claims in this paper are reproduced by the following scripts in this repository (<https://github.com/spsingularity/mu-transmutation-glueball>, `src/`; a tagged release is archived at Zenodo, DOI 10.5281/zenodo.21525533):
+All numerical claims in this paper are reproduced by the following scripts in this repository (<https://github.com/spsingularity/mu-transmutation-glueball>, `src/`; a tagged release is archived at Zenodo, DOI 10.5281/zenodo.21525532):
 
 - `src/mu_transmutation_check.py` — §2 coupling check and sensitivity; §3.1 one-loop $N_f$ scan; §4 UZ coefficient target.
 - `src/mu_transmutation_steps.py` — §3.2 two-loop + threshold band; the $b$-freed sum rule and measurability forecast; §5.4 subcomponent $\xi$ boundaries and the $m_X$-shift window.
