@@ -46,7 +46,7 @@ Setting $\Lambda_h = \mu = 28.55$ MeV yields
 
 $$\frac{1}{\alpha_h(M_{\rm Pl})} = 83.2, \qquad \alpha_h(M_{\rm Pl}) = 0.0120.$$
 
-This is the same ballpark as the Standard Model couplings at $M_{\rm Pl}$ ($1/\alpha \sim 47$–$59$), though not equal to any of them. The check verifies exactly (`mu_transmutation_check.py`). The $10^{60}$ tuning in $\rho$ genuinely becomes a log-natural coupling specification.
+This is the same ballpark as the Standard Model couplings at $M_{\rm Pl}$ ($1/\alpha \sim 47$–$59$), though not equal to any of them. The check verifies exactly (`src/mu_transmutation_check.py`). The $10^{60}$ tuning in $\rho$ genuinely becomes a log-natural coupling specification.
 
 We quote here the full Planck mass $M_{\rm Pl} = 1.22\times10^{19}$ GeV; the reduced-mass convention gives $1/\alpha \approx 80$. We therefore quote $1/\alpha_h(M_{\rm Pl}) \approx 80$–$83$, a convention band rather than a determination.
 
@@ -68,7 +68,7 @@ Rather than postulating $\alpha_h$, demand that the hidden coupling *equal the v
 
 $$\alpha_h(M_{\rm Pl}) = \alpha_s(M_{\rm Pl}).$$
 
-Running the measured $\alpha_s(M_Z) = 0.1181$ up at two loops (with the $N_f\,5\to6$ threshold at $m_t$) gives $\alpha_s(M_{\rm Pl}) = 0.01886$, i.e. $1/\alpha = 53.0$. The hidden confinement scale is then fixed entirely by the *discrete* flavor content of the mirror sector. At one loop (`mu_transmutation_check.py`):
+Running the measured $\alpha_s(M_Z) = 0.1181$ up at two loops (with the $N_f\,5\to6$ threshold at $m_t$) gives $\alpha_s(M_{\rm Pl}) = 0.01886$, i.e. $1/\alpha = 53.0$. The hidden confinement scale is then fixed entirely by the *discrete* flavor content of the mirror sector. At one loop (`src/mu_transmutation_check.py`):
 
 | hidden $SU(3)$ content | $\Lambda_h$ (one loop) |
 |---|---|
@@ -81,7 +81,7 @@ A mirror QCD with six light flavors and a Planck-unified coupling confines withi
 
 ### 3.2 Two-loop refinement: the single number dissolves into a band
 
-The two-loop calculation with thresholds (`mu_transmutation_steps.py`) supersedes the early one-loop quote of "$\Lambda_h \approx 46$ MeV":
+The two-loop calculation with thresholds (`src/mu_transmutation_steps.py`) supersedes the early one-loop quote of "$\Lambda_h \approx 46$ MeV":
 
 | scheme / order | $\Lambda_h$ |
 |---|---|
@@ -94,7 +94,7 @@ Two honest conclusions. (i) Mirror unification with $N_f = 6$ **robustly lands i
 
 ### 3.3 The three-loop result: deflationary, and instructively so
 
-The scheme-fixed three-loop (and four-loop) running was computed as Tier-1 item #2 (`mirror_qcd_3loop.py`), with the explicit question of whether it tightens the band. It does not:
+The scheme-fixed three-loop (and four-loop) running was computed as Tier-1 item #2 (`src/mirror_qcd_3loop.py`), with the explicit question of whether it tightens the band. It does not:
 
 | loop order | $\Lambda_{\rm pole}$ |
 |---|---|
@@ -151,7 +151,7 @@ which is lattice-measurable in principle (pure $SU(3)$, varying box size and bou
 
 ### 5.1 Cannibal freeze-out and the natural coupling
 
-The hidden sector confines into glueballs of mass $m_G = 6\Lambda_h \approx 180$–630 MeV across the perturbative band. Glueballs of a hidden non-Abelian sector are a well-studied dark-matter candidate [@Boddy:2014yra; @Soni:2016gzf; @Halverson:2016nfq; @Halverson:2018olu], with the relic abundance and $\Delta N_{\rm eff}$ set by the confining sector's cosmology [@Forestell:2017wov; @Carenza:2023eua]. Pure glue has no renormalizable portal to the Standard Model, so the operative relic regime is the **decoupled cannibal** one [@Carlson:1992fn]: number-changing $3\to2$ (SIMP-type) self-annihilations [@Hochberg:2014dra; @Hochberg:2014kqa; @Hochberg:2015vrg] with separate hidden-sector entropy, frozen out when $\Gamma_{3\to2} = H$ [@Pappadopulo:2016pkp; @Farina:2016llk; @Kuflik:2015isi]. The full calculation (`glueball_simp_relic.py`: separate-entropy tracking, Boltzmann-equilibrium cannibalization) confirms the coupling naturalness: solving for $\Omega h^2 = 0.12$ requires
+The hidden sector confines into glueballs of mass $m_G = 6\Lambda_h \approx 180$–630 MeV across the perturbative band. Glueballs of a hidden non-Abelian sector are a well-studied dark-matter candidate [@Boddy:2014yra; @Soni:2016gzf; @Halverson:2016nfq; @Halverson:2018olu], with the relic abundance and $\Delta N_{\rm eff}$ set by the confining sector's cosmology [@Forestell:2017wov; @Carenza:2023eua]. Pure glue has no renormalizable portal to the Standard Model, so the operative relic regime is the **decoupled cannibal** one [@Carlson:1992fn]: number-changing $3\to2$ (SIMP-type) self-annihilations [@Hochberg:2014dra; @Hochberg:2014kqa; @Hochberg:2015vrg] with separate hidden-sector entropy, frozen out when $\Gamma_{3\to2} = H$ [@Pappadopulo:2016pkp; @Farina:2016llk; @Kuflik:2015isi]. The full calculation (`src/glueball_simp_relic.py`: separate-entropy tracking, Boltzmann-equilibrium cannibalization) confirms the coupling naturalness: solving for $\Omega h^2 = 0.12$ requires
 
 $$\alpha_{\rm eff} \approx 0.25\text{–}0.6$$
 
@@ -192,7 +192,7 @@ The absorbable window carries a real signature: a future $m_X$ measurement at th
 
 ### 6.1 Self-interaction fixed by the scale
 
-Glueball dark matter self-interacts with a geometric, **velocity-independent** cross-section fixed by $\Lambda_h$ alone (`glueball_simp_relic.py`):
+Glueball dark matter self-interacts with a geometric, **velocity-independent** cross-section fixed by $\Lambda_h$ alone (`src/glueball_simp_relic.py`):
 
 | $\Lambda_h$ | $\sigma/m$ |
 |---|---|
@@ -206,7 +206,7 @@ Glueball dark matter self-interacts with a geometric, **velocity-independent** c
 
 ### 6.2 Gravothermal seeding of the Little Red Dots presses from below (derived, conditional)
 
-SIDM gravothermal collapse of early dense halos is a heavy-seed channel for the JWST Little Red Dot (LRD) overmassive black holes ($M_{\rm BH} \sim 10^6$–$10^8\,M_\odot$ at $z \sim 5$–9, $n_{\rm LRD} \sim 10^{-5}\,{\rm Mpc}^{-3}$). The calculation (`glueball_lrd_seeding.py`: $\sigma(M,z)$ from the linear $P(k)$, Sheth–Tormen mass function, NFW gravothermal time with the Essig et al. calibration, lognormal concentration tail, formation window $z_f \in \{10\text{–}15\} \to z = 7$) gives, at the best formation redshift $z_f = 15$:
+SIDM gravothermal collapse of early dense halos is a heavy-seed channel for the JWST Little Red Dot (LRD) overmassive black holes ($M_{\rm BH} \sim 10^6$–$10^8\,M_\odot$ at $z \sim 5$–9, $n_{\rm LRD} \sim 10^{-5}\,{\rm Mpc}^{-3}$). The calculation (`src/glueball_lrd_seeding.py`: $\sigma(M,z)$ from the linear $P(k)$, Sheth–Tormen mass function, NFW gravothermal time with the Essig et al. calibration, lognormal concentration tail, formation window $z_f \in \{10\text{–}15\} \to z = 7$) gives, at the best formation redshift $z_f = 15$:
 
 | $\Lambda_h$ | $\sigma/m$ | DM-only $n_{\rm seed}/n_{\rm LRD}$ | baryon-boosted $\times 30$ $n_{\rm seed}/n_{\rm LRD}$ | seed mass |
 |---|---|---|---|---|
@@ -300,11 +300,11 @@ Dimensional transmutation converts SEDE's deepest fine-tuning — the origin of 
 
 All numerical claims in this paper are reproduced by the following scripts in this repository (<https://github.com/spsingularity/mu-transmutation-glueball>, `src/`; a tagged release is archived at Zenodo, DOI 10.5281/zenodo.21525533):
 
-- `mu_transmutation_check.py` — §2 coupling check and sensitivity; §3.1 one-loop $N_f$ scan; §4 UZ coefficient target.
-- `mu_transmutation_steps.py` — §3.2 two-loop + threshold band; the $b$-freed sum rule and measurability forecast; §5.4 subcomponent $\xi$ boundaries and the $m_X$-shift window.
-- `mirror_qcd_3loop.py` — §3.3 three- and four-loop running, the spurious IR fixed point, and the 28–133 MeV band.
-- `glueball_simp_relic.py` — §5 decoupled-cannibal freeze-out, $\alpha_{\rm eff}$ and $\xi$/$Br$ bands, $\Delta N_{\rm eff}$, and the §6.1 $\sigma/m$ ladder.
-- `glueball_lrd_seeding.py` — §6.2 gravothermal seeding calculation (halo mass function, concentration tail, collapse times, seed abundances).
+- `src/mu_transmutation_check.py` — §2 coupling check and sensitivity; §3.1 one-loop $N_f$ scan; §4 UZ coefficient target.
+- `src/mu_transmutation_steps.py` — §3.2 two-loop + threshold band; the $b$-freed sum rule and measurability forecast; §5.4 subcomponent $\xi$ boundaries and the $m_X$-shift window.
+- `src/mirror_qcd_3loop.py` — §3.3 three- and four-loop running, the spurious IR fixed point, and the 28–133 MeV band.
+- `src/glueball_simp_relic.py` — §5 decoupled-cannibal freeze-out, $\alpha_{\rm eff}$ and $\xi$/$Br$ bands, $\Delta N_{\rm eff}$, and the §6.1 $\sigma/m$ ladder.
+- `src/glueball_lrd_seeding.py` — §6.2 gravothermal seeding calculation (halo mass function, concentration tail, collapse times, seed abundances).
 
 Source assessments (dimensional transmutation, glueball-DM, and LRD seeding) are documented in the private research hub.
 
@@ -316,6 +316,6 @@ human participants, no human data or tissue, and no animal subjects.
 
 ## Acknowledgements
 
-AI assistance: analysis and drafting were carried out with the assistance of Claude (Anthropic); all claims were verified against the reproducing scripts listed above.
+AI assistance: analysis and drafting were carried out with the assistance of Claude Opus 4.x (Anthropic); all claims were verified against the reproducing scripts listed above. No AI tool is an author.
 
 ## References
