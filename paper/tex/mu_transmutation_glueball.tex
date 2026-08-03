@@ -179,20 +179,20 @@ coincidence. The QCD-topological-sector program remains active and is
 being tested against current cosmological data
 \citep{VanWaerbeke:2025shm}.
 
-It is worth stating at the outset what survives if the contact term does
-not. The transmutation calculation, the mirror-unification band and the
-glueball relic analysis take as input only the value of \(\mu\),
-standard gauge-theory running, and lattice pure-glue relations; none of
-them uses the contact term. Should the Urban--Zhitnitsky mechanism fail,
-what remains is a hidden \(SU(3)\) sector confining at 30--130 MeV with
-no new continuous parameters, whose glueballs are a viable dark-matter
-candidate with a velocity-independent self-interaction; a negative
-result --- that no perturbative order can discriminate the two candidate
-coefficients (§\ref{sec-3-3}); and a cosmology-free lattice test that
-decides the identification either way (§\ref{sec-4-3}). What would be
-lost is the \emph{dark-energy interpretation} of that sector, not the
-sector itself. We flag this because the contact term is the one
-conjectural load in the paper, and it does not carry the rest.
+The contact term enters only in §\ref{sec-4}, and it is worth separating
+at the outset what does not depend on it. The transmutation calculation,
+the mirror-unification band and the glueball relic analysis take as
+input only the value of \(\mu\), standard gauge-theory running, and
+lattice pure-glue relations; none of them uses the contact term. Should
+the Urban--Zhitnitsky mechanism fail, what remains is a hidden \(SU(3)\)
+sector confining at 30--130 MeV with no new continuous parameters, whose
+glueballs are a viable dark-matter candidate with a velocity-independent
+self-interaction; a negative result --- that no perturbative order can
+discriminate the two candidate coefficients (§\ref{sec-3-3}); and a
+cosmology-free lattice test that decides the identification either way
+(§\ref{sec-4-3}). What would be lost is the \emph{dark-energy
+interpretation} of that sector, not the sector itself: the contact term
+is the one conjectural load here, and it does not carry the rest.
 
 The \(H\)-linear dark-energy phenomenology that motivates the scale ---
 the equation of state, the growth gate and the modified-growth
@@ -200,10 +200,10 @@ signatures --- is developed in a companion cosmology manuscript, which
 identifies the origin of \(\mu\) as its deepest open problem. Nothing
 below depends on that development.
 
-We are explicit throughout about the provenance of each claim: which
-quantities are \emph{derived} (following from stated inputs by a
-reproducible calculation), which are \emph{matched} to data (a computed
-number compared against an observed or required value), which are
+Each claim below is tagged by provenance: which quantities are
+\emph{derived} (following from stated inputs by a reproducible
+calculation), which are \emph{matched} to data (a computed number
+compared against an observed or required value), which are
 \(O(1)\)-controlled \emph{estimates}, and which are \emph{conjectures}
 (a mechanism whose validity is not established). Every numerical claim
 below carries its provenance; all are reproducible from the scripts
@@ -235,10 +235,9 @@ GeV; the reduced-mass convention gives \(1/\alpha \approx 80\). We
 therefore quote \(1/\alpha_h(M_{\rm Pl}) \approx 80\)--\(83\), a
 convention band rather than a determination.
 
-\subsection{Sensitivity honesty}\label{sec-2-2}
+\subsection{Sensitivity of the transmutation map}\label{sec-2-2}
 
-The transmutation map is exponential, and honesty requires stating its
-Jacobian:
+The transmutation map is exponential; its Jacobian is
 
 \begin{equation}\frac{d\ln\Lambda_h}{d\ln\alpha_h} = \ln\frac{M_{\rm Pl}}{\Lambda_h} = 47.5.\end{equation}
 
@@ -324,7 +323,7 @@ scheme / order
 \(6^{1/3}\mu = 51.9\) \\
 \end{longtable}
 
-Two honest conclusions. (i) Mirror unification with \(N_f = 6\)
+Two conclusions follow. (i) Mirror unification with \(N_f = 6\)
 \textbf{robustly lands in the right decade with zero new continuous
 parameters} --- a consistency check that the mirror hypothesis is not
 excluded. \(N_f = 6\) is the flavor content selected to land in the
@@ -334,12 +333,12 @@ decade (\(N_f = 5, 7\) miss by orders of magnitude); given
 near-automatic --- a consistency check, not a prediction. (ii) The
 loop/scheme spread (\(\times 2\) each way, band \(\approx\) 28--105 MeV)
 \textbf{cannot distinguish} the bare coefficient (\(\Lambda_h = \mu\))
-from the UZ-corrected one (\(\Lambda_h = 6^{1/3}\mu\), §\ref{sec-4}). An
-earlier claim of ``12\% alignment'' with the UZ target was premature and
-is retracted: the band brackets \emph{both} targets.
+from the UZ-corrected one (\(\Lambda_h = 6^{1/3}\mu\), §\ref{sec-4}).
+The band brackets \emph{both} targets, so no alignment claim can be
+drawn from it.
 
-\subsection{The three-loop result: deflationary, and instructively
-so}\label{sec-3-3}
+\subsection{The three-loop result: the band does not
+tighten}\label{sec-3-3}
 
 The scheme-fixed three-loop (and four-loop) running was computed as
 Tier-1 item \#2 (\texttt{src/\allowbreak mirror\_\allowbreak qcd\_\allowbreak 3loop.\allowbreak py}), with the explicit
@@ -449,9 +448,9 @@ gauge-variant and non-propagating; whether the linear-in-\(H\) term
 survives careful regularization has been debated since \(\sim\)2011 and
 is unsettled in the literature
 \citep{Garcia-Salcedo:2013htj, Ebrahimi:2011js, Dudal:2015khv}. Within
-the transmutation route this is now the single load-bearing assumption,
-and we do not soften that: if the UZ term does not survive, the route
-delivers a natural scale with no mechanism for the law.
+the transmutation route this is the single load-bearing assumption: if
+the UZ term does not survive, the route delivers a natural scale with no
+mechanism for the law.
 
 \subsection{The structural argument: the contact term as a candidate
 identity for the nonlocal degrees of freedom}\label{sec-4-2}
@@ -549,8 +548,7 @@ non-relativistic well before BBN, so it is cold rather than warm; the
 cannibal \(3\to2\) heating \citep{Farina:2016llk, Pappadopulo:2016pkp}
 does not spoil this at such small \(\xi\).
 
-\subsection{The honest ledger entry: a mass miracle, not an abundance
-miracle}\label{sec-5-2}
+\subsection{A mass miracle, not an abundance miracle}\label{sec-5-2}
 
 The framing ``SIMP freeze-out lands on \(\Omega_{\rm DM}\) with no
 fine-tuning'' holds for the \emph{mass scale and coupling} but
@@ -572,15 +570,15 @@ branching ratio to the hidden sector must be
 contact.
 \end{quote}
 
-The ledger entry, stated plainly: this proposal \textbf{trades
-ECCG-ADM's \emph{explained} \(\Omega_{\rm DM}/\Omega_b \approx 5\) for a
-\(Br \sim 2\times10^{-10}\) reheating selection.} One dial for another.
-The new dial is arguably more natural (a tiny branching to a portal-less
-sector is generic; the \(\times1.11\) band within it is not), but the
-``why comparable to baryons'' coincidence returns unexplained. The SIMP
-miracle here is a \textbf{mass miracle} --- \(m_G\) lands where
-\(3\to2\) works with a natural coupling, tied to the dark-energy scale
---- \textbf{not an abundance miracle}.
+This proposal \textbf{trades ECCG-ADM's \emph{explained}
+\(\Omega_{\rm DM}/\Omega_b \approx 5\) for a \(Br \sim 2\times10^{-10}\)
+reheating selection} --- one dial for another. The new dial is arguably
+more natural (a tiny branching to a portal-less sector is generic; the
+\(\times1.11\) band within it is not), but the ``why comparable to
+baryons'' coincidence returns unexplained. The SIMP miracle here is a
+\textbf{mass miracle} --- \(m_G\) lands where \(3\to2\) works with a
+natural coupling, tied to the dark-energy scale --- \textbf{not an
+abundance miracle}.
 
 \subsection{A theorem-level observation}\label{sec-5-3}
 
@@ -736,16 +734,15 @@ Two findings:
   fails by \(10^4\) even boosted.
 \end{enumerate}
 
-\textbf{Error budget --- do not oversell.} The seed abundance traverses
-\(\sim 6\) orders of magnitude between the DM-only and
-\(\times30\)-boosted brackets; the boost factor, the collapse-time
-calibration \(C \approx 0.75\), the concentration parameters \(\bar c\)
-and \(\sigma_{\ln c}\), and the 2\% seed fraction are each
-\(O(1)\)-uncertain, and the abundance responds \emph{exponentially}
-through the concentration tail (which is trusted only to
-\(\sim 4\sigma\), beyond which it is not simulation-calibrated). The
-``\(\Lambda_h = 52\) lands on target'' statement is therefore a
-\textbf{viability statement, not a prediction}: the honest claim is that
+\textbf{Error budget.} The seed abundance traverses \(\sim 6\) orders of
+magnitude between the DM-only and \(\times30\)-boosted brackets; the
+boost factor, the collapse-time calibration \(C \approx 0.75\), the
+concentration parameters \(\bar c\) and \(\sigma_{\ln c}\), and the 2\%
+seed fraction are each \(O(1)\)-uncertain, and the abundance responds
+\emph{exponentially} through the concentration tail (which is trusted
+only to \(\sim 4\sigma\), beyond which it is not simulation-calibrated).
+The ``\(\Lambda_h = 52\) lands on target'' statement is therefore a
+\textbf{viability statement, not a prediction}: the claim is that
 \emph{within the plausible baryon-boost bracket,
 \(\Lambda_h \approx 52\) MeV crosses \(n_{\rm LRD}\) while 105 cannot
 and 30 over-seeds}.
@@ -772,13 +769,13 @@ UZ-defined 52 MeV --- not three independent probes, since the UZ arm is
 the \emph{definition} of 52 MeV (\(=6^{1/3}\mu\)), not an independent
 measurement of it.} The two-sided squeeze is consistent with
 \(\Lambda_h \approx 52\) MeV --- the same value the SEDE H-linear
-mechanism requires. We state its epistemic status precisely:
-\textbf{this is a convergence of \emph{constraints} (one of them
-conditional on an unresolved astrophysical question), not a measurement
-of \(\Lambda_h\).} The lattice \(T_c/\Lambda_{\overline{\rm MS}}\)
-calculation (§\ref{sec-3-4}) would supply a genuinely independent,
-non-astrophysical probe --- either converging on one number, or failing
-to and falsifying the transmutation identification (Figure 2).
+mechanism requires. This is a convergence of \emph{constraints} (one of
+them conditional on an unresolved astrophysical question), not a
+measurement of \(\Lambda_h\).** The lattice
+\(T_c/\Lambda_{\overline{\rm MS}}\) calculation (§\ref{sec-3-4}) would
+supply a genuinely independent, non-astrophysical probe --- either
+converging on one number, or failing to and falsifying the transmutation
+identification (Figure 2).
 
 \begin{figure}
 \centering
@@ -898,7 +895,7 @@ log-selected & derived \\
 mirror-unified \(N_f = 6\) lands in the right decade with zero new
 continuous inputs & derived, and matched at the decade level \\
 perturbative band 28--133 MeV, irreducibly \(O(1)\)-wide (near-conformal
-loop sensitivity) & derived --- deflationary \\
+loop sensitivity) & derived \\
 \(\Lambda_h = 52\) vs 28.5 MeV discrimination & \textbf{open} ---
 lattice \(T_c/\Lambda_{\overline{\rm MS}}\) (spec S-4) \\
 UZ mechanism \(\rho \sim H\chi_{\rm top}/m_G\) (the law itself) &
@@ -938,9 +935,7 @@ constraints, one conditional --- \textbf{not a measurement} \\
   factor-\(\sim 5\) loop/scheme band because \(N_f = 6\) sits near the
   conformal-window edge. The three-loop calculation was run precisely to
   tighten this and did not --- it instead exhibited a spurious IR fixed
-  point marking the failure of perturbative control. We regard reporting
-  this deflationary result as a feature of the program, not a defect of
-  the proposal.
+  point marking the failure of perturbative control.
 \item
   \textbf{The abundance dial.} The glueball horn gives up ECCG-ADM's
   explained \(\Omega_{\rm DM}/\Omega_b\) for a reheating branching ratio
@@ -962,8 +957,7 @@ constraints, one conditional --- \textbf{not a measurement} \\
   scale \(a_0\) \citep{Bernal:2011wm}, connecting the Planck-scale
   coupling to galaxy rotation curves in four steps. Against ΛCDM's two
   unexplained numbers (\(\Lambda\), \(\Omega_{\rm DM}\)), that is a real
-  economy, with the \(Br\) dial and the UZ conjecture as the honest
-  residuals.
+  economy, with the \(Br\) dial and the UZ conjecture as the residuals.
 \item
   \textbf{Mutual exclusivity with the visible-QCD origin.} The
   transmutation origin and the alternative visible-QCD hypothesis
@@ -986,12 +980,12 @@ constraints, one conditional --- \textbf{not a measurement} \\
 Dimensional transmutation converts SEDE's deepest fine-tuning --- the
 origin of \(\mu = 28.5\) MeV --- into, at worst, a log-natural coupling
 specification and, in the mirror-unified version, a construction with no
-new continuous input at all. The honest score is: a zero-parameter
-decade-level success for the scale (band 28--133 MeV, irreducibly
-\(O(1)\)-wide perturbatively, with a specified lattice closer); one
-contested load-bearing conjecture for the law (UZ), uniquely aligned
-with the program's independently-required nonlocal horizon degrees of
-freedom and equipped with a cosmology-free lattice discharge test; a
+new continuous input at all. The score is: a zero-parameter decade-level
+success for the scale (band 28--133 MeV, irreducibly \(O(1)\)-wide
+perturbatively, with a specified lattice closer); one contested
+load-bearing conjecture for the law (UZ), aligned with the nonlocal
+horizon degrees of freedom that a volume-law count independently
+requires and equipped with a cosmology-free lattice discharge test; a
 glueball dark-matter branch whose mass and coupling are natural but
 whose abundance is a \(10^{-10}\)-level selection; and a set of
 near-term, mutually independent probes --- cluster SIDM, a conditional
